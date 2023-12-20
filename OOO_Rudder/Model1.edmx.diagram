@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8be79f3eff474039a1a6a0c290e19778" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.OrderItems" Width="1.5" PointX="7.5" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Orders" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PickupPoints" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Products" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RedemptionCodes" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.RoleName" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.UserRole" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__OrderItem__Order__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__OrderItem__Produ__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Orders__PickupPo__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Redemptio__Order__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Orders_UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_UserRole_RoleName" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

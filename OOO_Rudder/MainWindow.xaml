@@ -1,0 +1,34 @@
+﻿<Window x:Class="OOO_Rudder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOO_Rudder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="Black">
+            <Label Content="OOO Rudder" Foreground="White" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Height="35" Width="131"/>
+            <Label Content="Вход в систему" Foreground="White" FontSize="30" FontWeight="Medium" HorizontalAlignment="Center" VerticalAlignment="Top" Height="70" Width="222" Margin="0,20,0,0"/>
+            <Image Source="/Resources/1670303845_48-kartinkin-net-p-rul-mashini-kartinka-vkontakte-52.jpg" HorizontalAlignment="Left" Margin="0,0,0,45" Width="72"/>
+        </Grid>
+        <Grid Grid.Row="2" Background="Black"/>
+        <Grid Grid.Row="1">
+            <Canvas Name="Main" HorizontalAlignment="Center" VerticalAlignment="Center" Height="189" Width="390">
+                <Label Content="Логин:" Foreground="Black" FontSize="11" FontWeight="Medium" HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="54" Grid.Row="1" Canvas.Left="99" Canvas.Top="47"/>
+                <TextBox Name = "LogTB" Canvas.Left="99" TextWrapping="Wrap" Text="" Canvas.Top="74" Width="192" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1"/>
+                <TextBox Name="PassTB" TextWrapping="Wrap" Text="" Width="192" Height="20" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="1" Canvas.Left="99" Canvas.Top="127"/>
+                <Label Content="Пароль:" Foreground="Black" FontSize="11" FontWeight="Medium" HorizontalAlignment="Left" VerticalAlignment="Top" Height="28" Width="54" Grid.Row="1" Canvas.Left="99" Canvas.Top="99"/>
+                <Button Name="BtnEnter" HorizontalAlignment="Left" VerticalAlignment="Top" Height="19" Width="114" Grid.Row="1" Content="Вход" Canvas.Left="138" Canvas.Top="160" Click="BtnEnter_Click_1"/>
+            </Canvas>
+
+        </Grid>
+
+    </Grid>
+</Window>
